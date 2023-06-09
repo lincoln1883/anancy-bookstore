@@ -52,12 +52,8 @@ The Anancy Bookstore app is a project assignment of module three where we are re
 
 ### Key Features <a name="key-features"></a>
 
-- Styling with Vanilla CSS
 - Linting with Eslint and Stylelint.
 - Routing using react router.
-- React Hooks (useState,UseEffect)
-- State Management(Error,Loading)
-- Testing with Jest & React Testing Library.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -124,6 +120,14 @@ To test please execute the following command:
 
 
 <!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- React Hooks (useState,UseEffect)
+- Testing with Jest & React Testing Library.
+- App wide State Management with Redux.
+- Styling with Vanilla CSS
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
