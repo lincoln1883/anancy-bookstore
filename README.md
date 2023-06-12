@@ -54,7 +54,7 @@ The Anancy Bookstore app is a project assignment of module three where we are re
 
 - Linting with Eslint and Stylelint.
 - Routing using react router.
-
+- App wide State Management with Redux.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +125,6 @@ To test please execute the following command:
 
 - React Hooks (useState,UseEffect)
 - Testing with Jest & React Testing Library.
-- App wide State Management with Redux.
 - Styling with Vanilla CSS
 
 
