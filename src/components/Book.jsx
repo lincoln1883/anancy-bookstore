@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 const Book = ({ book }) => (
   <>
     <ul>
-      <div key={book.id}>
-        {book.title}
+      <div key={book.item_id}>
+        <span>{book.title}</span>
+        {' - '}
         <span>{book.author}</span>
+        {' - '}
         <button type="button">Remove</button>
       </div>
     </ul>
@@ -15,7 +17,7 @@ const Book = ({ book }) => (
 
 Book.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   }).isRequired,
