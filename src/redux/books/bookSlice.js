@@ -4,7 +4,7 @@ import axios from 'axios';
 const apiKey = process.env.REACT_APP_API_KEY;
 
 const initialState = {
-  loading: true,
+  status: 'idle',
   books: [],
   error: '',
 };
@@ -33,7 +33,26 @@ const bookSlice = createSlice({
       state.books = state.books.filter((book) => book.id !== bookId);
     },
   },
+  extraReducers: (builder) => {
+    builder.addCase(fetchBooks.pending, (state) => {
+      state.status = 'loading';
+    });
+    builder.addCase(fetchBooks.fulfilled, (state, action) => {
+      state.status = 'success';
+      state.books = action.payload;
+      state.error = '';
+    });
+    builder.addCase(fetchBooks.rejected, (state, action) => {
+      state.status = 'failed';
+      state.books = [];
+      state.error = action.error;
+    });
+  },
 });
+
+export const getAllBooks = (state) => state.books.books;
+export const getBooksStatus = (state) => state.books.status;
+export const getBooksError = (state) => state.books.error;
 
 export default bookSlice.reducer;
 export const { addBook, removeBook } = bookSlice.actions;
