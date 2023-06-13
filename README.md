@@ -35,18 +35,10 @@ The Anancy Bookstore app is a project assignment of module three where we are re
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>REACT</summary>
-  <ul>
-    <li><a href="https://create-react-app.dev/">REACT</a></li>
-  </ul>
-</details>
-<details>
-  <summary>REACT ROUTER</summary>
-  <ul>
-    <li><a href="https://reactrouter.com/en/main">REACT ROUTER</a></li>
-  </ul>
-</details>
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/-React%20Router-316192?style=for-the-badge&logo=react-router)
+![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
 
 <!-- Features -->
 
