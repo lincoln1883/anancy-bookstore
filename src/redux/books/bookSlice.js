@@ -4,26 +4,9 @@ import axios from 'axios';
 const apiKey = process.env.REACT_APP_API_KEY;
 
 const initialState = {
-  books: [
-    {
-      id: 1,
-      title: 'The Great Gatsby',
-      author: 'John Smith',
-      category: 'Fiction',
-    },
-    {
-      id: 2,
-      title: 'Anna Karenina',
-      author: 'Leo Tolstoy',
-      category: 'Fiction',
-    },
-    {
-      id: 3,
-      title: 'The Selfish Gene',
-      author: 'Richard Dawkins',
-      category: 'Nonfiction',
-    },
-  ],
+  loading: true,
+  books: [],
+  error: '',
 };
 
 export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
