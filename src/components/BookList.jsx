@@ -11,13 +11,12 @@ const BookList = () => {
       <h2>BookList</h2>
       {book.books.map((book) => (
         <Book
-          key={book.item_id}
+          key={book.id}
           book={book}
         />
       ))}
       <BookInput />
     </>
-
   );
 };
 
