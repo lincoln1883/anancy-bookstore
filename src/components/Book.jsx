@@ -5,30 +5,30 @@ import Button from './Button';
 import { removeBook } from '../redux/books/bookSlice';
 
 const Book = ({ book }) => {
+  console.log(book);
   const dispatch = useDispatch();
 
   const handleRemoveBook = () => {
-    dispatch(removeBook(book.id));
+    const id = book.item_id;
+    dispatch(removeBook(id));
   };
 
   return (
     <>
-      <ul>
-        <div key={book.id}>
-          <span>{book.title}</span>
-          {' - '}
-          <span>{book.author}</span>
-          {' - '}
-          <Button type="button" onClick={handleRemoveBook}>Remove</Button>
-        </div>
-      </ul>
+      <div>
+        <span>{book.title}</span>
+        {' - '}
+        <span>{book.author}</span>
+        {' - '}
+        <Button type="button" onClick={handleRemoveBook}>Remove</Button>
+      </div>
     </>
   );
 };
 
 Book.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    item_id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   }).isRequired,
