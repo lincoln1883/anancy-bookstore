@@ -6,12 +6,13 @@ import { addBook } from '../redux/books/bookSlice';
 const BookInput = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const [error, setError] = useState(false);
 
   const dispatch = useDispatch();
 
   const handleAddBook = () => {
-    if (title === '' || author === '') {
+    if (title === '' || author === '' || category === '') {
       setError(true);
       setTimeout(() => {
         setError(false);
@@ -19,13 +20,15 @@ const BookInput = () => {
       return;
     }
     const newBook = {
-      id: Math.floor(Math.random() * 100),
+      item_id: Math.floor(Math.random() * 100),
       title,
       author,
+      category,
     };
     dispatch(addBook(newBook));
     setTitle('');
     setAuthor('');
+    setCategory('');
   };
 
   return (
@@ -46,6 +49,14 @@ const BookInput = () => {
         name="author"
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder="Category"
+        required
+        name="category"
+        value={category}
+        onChange={(e) => setCategory(e.target.value)}
       />
       <Button type="submit" onClick={handleAddBook}>Add Book</Button>
       {error && <p className="error">Please fill all the fields</p>}
