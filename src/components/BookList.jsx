@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
-  getAllBooks, getBooksError, getBooksStatus, fetchBooks,
+  fetchBooks,
+  getAllBooks, getBooksError, getBooksStatus,
 } from '../redux/books/bookSlice';
 import Book from './Book';
 import BookInput from './BookInput';
@@ -19,33 +20,25 @@ const BookList = () => {
     }
   }, [booksStatus, dispatch]);
 
-  let display;
-
-  if (booksStatus === 'loading') {
-    display = <div>Loading...</div>;
-  } else if (booksStatus === 'success') {
-    const keys = Object.keys(book);
-    if (keys.length === 0) {
-      display = <div>No books available</div>;
-    }
-    display = keys.map((key) => (
-      book[key].map((bookItem) => (
-        <Book
-          key={bookItem.item_id}
-          book={bookItem}
-        />
-      ))
-    ));
-  } else if (booksStatus === 'failed') {
-    display = <p>{booksError}</p>;
-  }
-
   return (
     <>
       <h2>BookList</h2>
-      <div>
-        {display}
-      </div>
+      {booksStatus === 'loading' && <div>Loading...</div>}
+      {booksStatus === 'success' && book.length === 0 && <div>No books available</div>}
+      {booksStatus === 'success' && book.length > 0 && (
+        <div>
+          {book.map((book) => (
+            <Book
+              key={book.item_id}
+              id={book.item_id}
+              title={book.title}
+              author={book.author}
+              category={book.category}
+            />
+          ))}
+        </div>
+      )}
+      {booksStatus === 'failed' && <p>{booksError}</p>}
       <BookInput />
     </>
   );
