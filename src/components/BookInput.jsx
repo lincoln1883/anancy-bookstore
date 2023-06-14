@@ -32,9 +32,10 @@ const BookInput = () => {
   };
 
   return (
-    <div>
-      <h4>ADD NEW BOOK</h4>
+    <div className="mt-4">
+      <h2 className="text-slate-500 h-6">ADD NEW BOOK</h2>
       <input
+        className="h-9 p-2 mt-2 mr-2 mb-2 bg-white border border-slate-400 rounded-md"
         type="text"
         placeholder="Book title"
         required
@@ -43,6 +44,7 @@ const BookInput = () => {
         onChange={(e) => setTitle(e.target.value)}
       />
       <input
+        className="h-9 p-2 mt-2 mr-2 mb-2 bg-white border border-slate-400 rounded-md"
         type="text"
         placeholder="Author"
         required
@@ -51,6 +53,7 @@ const BookInput = () => {
         onChange={(e) => setAuthor(e.target.value)}
       />
       <input
+        className="h-9 p-2 mt-2 mr-2 mb-2 bg-white border border-slate-400 rounded-md"
         type="text"
         placeholder="Category"
         required
@@ -58,7 +61,7 @@ const BookInput = () => {
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       />
-      <Button type="submit" onClick={handleAddBook}>Add Book</Button>
+      <Button type="submit" className="bg-sky-600" onClick={handleAddBook}>Add Book</Button>
       {error && <p className="error">Please fill all the fields</p>}
     </div>
   );
