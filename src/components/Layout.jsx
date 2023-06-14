@@ -3,10 +3,12 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 
 const Layouts = () => (
-  <div>
+  <>
     <Navbar />
-    <Outlet />
-  </div>
+    <main className="container mx-auto px-4 mt-2 mb-2">
+      <Outlet />
+    </main>
+  </>
 );
 
 export default Layouts;
