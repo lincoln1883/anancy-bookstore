@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsPersonCircle } from 'react-icons/bs';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
@@ -9,13 +10,14 @@ const Navbar = () => (
     <div className="w-60 mt-6 mr-0 mb-0 mx-0">
       <ul className="flex justify-center gap-2 mt-1">
         <li className="nav-link">
-          <NavLink className=" text-sm text-black hover:text-gray-600 active:bg-gray-200" to="/books">BOOKS</NavLink>
+          <NavLink className=" text-md text-black hover:text-gray-600 active:bg-gray-300" to="/books">BOOKS</NavLink>
         </li>
         <li className="nav-link">
-          <NavLink className=" text-sm  text-black hover:text-gray-600 active:bg-gray-200" to="/categories">CATEGORIES</NavLink>
+          <NavLink className=" text-md  text-black hover:text-gray-600 active:bg-gray-300" to="/categories">CATEGORIES</NavLink>
         </li>
       </ul>
     </div>
+    <BsPersonCircle className="absolute right-0 top-0 mt-6 mr-12 text-blue-400 mb-0 mx-0 hover:cursor-pointer" size="2em" />
   </nav>
 );
 export default Navbar;
