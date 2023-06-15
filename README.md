@@ -29,31 +29,31 @@
 
 # 📖 Anancy Bookstore <a name="about-project"></a>
 
-The Anancy Bookstore app is a project assignment of module three where we are required to build our second React app. It is a simple bookstore where you can add delete books. It features include React Hooks,React Router, Jest and React Testing Library. 
+The Anancy Bookstore app is a project assignment of module three where we are required to build our second React app. It is a simple bookstore where you can add delete books. It features include React Hooks,React Router, Jest and React Testing Library.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![React Router](https://img.shields.io/badge/-React%20Router-316192?style=for-the-badge&logo=react-router)
 ![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- Linting with Eslint and Stylelint.
 - Routing using react router.
 - App wide State Management with Redux.
+- Styling with Tailwind css.
+- Icon with React Icons.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ### Live Demo <a name = "live-demo"></a>
-
 
 ### Prerequisites
 
@@ -109,17 +109,11 @@ To test please execute the following command:
 - Twitter: [lincolngibson7](https://twitter.com/lincolngibson7)
 - LinkedIn: [lincoln-gibson](https://linkedin.com/in/lincoln-gibson)
 
-
-
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- React Hooks (useState,UseEffect)
 - Testing with Jest & React Testing Library.
-- Styling with Vanilla CSS
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
