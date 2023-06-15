@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 const Layouts = () => (
   <>
     <Navbar />
-    <main className="container mx-auto px-4 mt-2 mb-2">
+    <main className="container mx-auto mt-2 mb-2">
       <Outlet />
     </main>
   </>
