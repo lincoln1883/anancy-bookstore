@@ -17,14 +17,18 @@ const Book = ({
   };
 
   const handleProgressBarClick = () => {
-    if (percentage < 100) {
+    if (percentage !== 100) {
       setPercentage(percentage + 1);
+    } else {
+      setPercentage(0);
     }
   };
 
   const handleChapterClick = () => {
-    if (Chapter < 50) {
+    if (Chapter !== 50) {
       setChapter(Chapter + 1);
+    } else {
+      setChapter(0);
     }
   };
 
