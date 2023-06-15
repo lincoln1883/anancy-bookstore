@@ -22,10 +22,10 @@ const BookList = () => {
 
   return (
     <>
-      {booksStatus === 'loading' && <div>Loading...</div>}
-      {booksStatus === 'success' && book.length === 0 && <div>No books available</div>}
+      {booksStatus === 'loading' && <div className="text-center font-bold text-2xl">Loading...</div>}
+      {booksStatus === 'success' && book.length === 0 && <div className="text-center font-bold text-3xl">No books available</div>}
       {booksStatus === 'success' && book.length > 0 && (
-        <div className="flex flex-col gap-2 mb-4">
+        <div className="flex flex-col gap-2 mb-4 w-full">
           {book.map((book) => (
             <Book
               key={book.item_id}
