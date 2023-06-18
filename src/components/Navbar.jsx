@@ -10,7 +10,7 @@ const Navbar = () => (
     <div className="w-60 mt-6 mr-0 mb-0 mx-0">
       <ul className="flex justify-center gap-2 mt-1">
         <li className="nav-link">
-          <NavLink className=" text-md text-black hover:text-gray-600 active:bg-gray-300" to="/books">BOOKS</NavLink>
+          <NavLink className=" text-md text-black hover:text-gray-600 active:bg-gray-300" to="/">BOOKS</NavLink>
         </li>
         <li className="nav-link">
           <NavLink className=" text-md  text-black hover:text-gray-600 active:bg-gray-300" to="/categories">CATEGORIES</NavLink>

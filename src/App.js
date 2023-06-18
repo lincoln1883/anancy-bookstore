@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Layouts />}>
-          <Route path="/books" element={<Books />} />
+          <Route index element={<Books />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="*" element={<NotFound />} />
         </Route>
