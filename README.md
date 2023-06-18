@@ -29,7 +29,7 @@
 
 # 📖 Anancy Bookstore <a name="about-project"></a>
 
-The Anancy Bookstore app is a project assignment of module three where we are required to build our second React app. It is a simple bookstore where you can add delete books. It features include React Hooks,React Router, Jest and React Testing Library.
+The Anancy Bookstore app is a project assignment of module three where we are required to build our second React app. It is a simple bookstore where you can add and delete books. features include React Hooks,React Router, App-wide State Management with Redux & Redux Toolkit and API calls with Axios.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,9 +44,9 @@ The Anancy Bookstore app is a project assignment of module three where we are re
 
 ### Key Features <a name="key-features"></a>
 
-- Routing using react router.
-- App wide State Management with Redux.
-- Styling with Tailwind css.
+- Routing using react-router.
+- App-wide State Management with Redux.
+- Styling with Tailwind CSS.
 - Icon with React Icons.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -107,7 +107,7 @@ To test please execute the following command:
 
 - GitHub: [lincoln1883](https://github.com/lincoln1883)
 - Twitter: [lincolngibson7](https://twitter.com/lincolngibson7)
-- LinkedIn: [lincoln-gibson](https://linkedin.com/in/lincoln-gibson)
+- LinkedIn : [lincoln-gibson](https://linkedin.com/in/lincoln-gibson)
 
 <!-- FUTURE FEATURES -->
 
