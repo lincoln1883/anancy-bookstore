@@ -16,19 +16,13 @@ const Book = ({
     dispatch(removeBook(id));
   };
 
-  const handleProgressBarClick = () => {
-    if (percentage !== 100) {
-      setPercentage(percentage + 1);
-    } else {
-      setPercentage(0);
-    }
-  };
-
   const handleChapterClick = () => {
     if (Chapter !== 50) {
       setChapter(Chapter + 1);
+      setPercentage((Chapter + 1) * 2);
     } else {
       setChapter(0);
+      setPercentage(0);
     }
   };
 
@@ -48,7 +42,11 @@ const Book = ({
       </div>
       <div className="flex gap-10 items-center self-end">
         <div className="flex gap-3 ">
-          <button className="block" type="button" style={{ width: '100px' }} onClick={handleProgressBarClick}>
+          <div
+            className="block"
+            type="button"
+            style={{ width: '100px' }}
+          >
             <CircularProgressbar
               value={percentage}
               strokeWidth={10}
@@ -58,7 +56,7 @@ const Book = ({
                 backgroundColor: '#f88',
               })}
             />
-          </button>
+          </div>
           <div className="flex flex-col items-center justify-center">
             <p className="text-3xl">{`${percentage}%`}</p>
             <p className="text-xl font-bold text-slate-400">Completed</p>
@@ -72,7 +70,7 @@ const Book = ({
             {' '}
             { Chapter }
           </p>
-          <button className="bg-blue-400 text-white text-sm rounded-md h-12 w-48" type="button" onClick={handleChapterClick}>UPDATE PROGRESS</button>
+          <button className="bg-blue-400 text-white text-sm rounded-md h-12 w-48 hover:bg-blue-500" type="button" onClick={handleChapterClick}>UPDATE PROGRESS</button>
         </div>
       </div>
     </div>
