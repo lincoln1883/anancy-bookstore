@@ -5,10 +5,10 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => (
   <nav className="flex px-14 gap-2 bg-white shadow-md w-full h-20">
     <div className="flex align-middle h-20">
-      <h1 className="m-auto w-60 h-9 font-bold text-3xl text-center text-sky-600">Bookstore CMS</h1>
+      <h1 className="m-auto hidden sm:block w-60 h-9 font-bold text-3xl text-center text-sky-600">Bookstore CMS</h1>
     </div>
     <div className="w-60 mt-6 mr-0 mb-0 mx-0">
-      <ul className="flex justify-center gap-2 mt-1">
+      <ul className="flex justify-start sm:justify-center gap-2 mt-1">
         <li className="nav-link">
           <NavLink className=" text-md text-black hover:text-gray-600 active:bg-gray-300" to="/">BOOKS</NavLink>
         </li>
