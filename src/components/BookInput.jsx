@@ -33,10 +33,10 @@ const BookInput = () => {
 
   return (
     <>
-      <h2 className="mt-4 text-slate-500 text-2xl">ADD NEW BOOK</h2>
-      <div className="flex flex-wrap items-center justify-between gap-2 mb-4 w-full">
+      <h2 className="mt-4 text-slate-500 text-2xl sm:text-start text-center">ADD NEW BOOK</h2>
+      <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-2 mb-4 w-full">
         <input
-          className="h-10 p-2 mt-2 mr-2 mb-2 w-[25.5%] bg-white border border-slate-400 rounded-md"
+          className="h-10 p-2 mt-2 mr-2 mb-2 w-[75%] sm:w-[25.5%] bg-white border border-slate-400 rounded-md"
           type="text"
           placeholder="Book title"
           required
@@ -45,7 +45,7 @@ const BookInput = () => {
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
-          className="h-10 p-2 mt-2 mr-2 mb-2 w-[25.5%] bg-white border border-slate-400 rounded-md"
+          className="h-10 p-2 mt-2 mr-2 mb-2 w-[75%] sm:w-[25.5%] bg-white border border-slate-400 rounded-md"
           type="text"
           placeholder="Author"
           required
@@ -54,7 +54,7 @@ const BookInput = () => {
           onChange={(e) => setAuthor(e.target.value)}
         />
         <input
-          className="h-10 p-2 mt-2 mr-2 mb-2 w-[25.5%] bg-white border border-slate-400 rounded-md"
+          className="h-10 p-2 mt-2 mr-2 mb-2 w-[75%] sm:w-[25.5%] bg-white border border-slate-400 rounded-md"
           type="text"
           placeholder="Category"
           required

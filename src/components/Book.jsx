@@ -27,7 +27,7 @@ const Book = ({
   };
 
   return (
-    <div className="flex justify-between bg-white h-40 p-5 shadow-xl">
+    <div className="flex flex-col sm:w-full ml-3 mr-3 items-center gap-2 h-3/4 sm:flex-row justify-between bg-white md:h-40 p-5 shadow-xl">
       <div>
         <p className="h-4 text-sm font-bold opacity-1 text-slate-400 mb-1 capitalize">{category}</p>
         <p className="h-7 text-2xl font-bold capitalize">{title}</p>
@@ -40,8 +40,8 @@ const Book = ({
           <button className="text-cyan-600" type="button">Edit</button>
         </div>
       </div>
-      <div className="flex gap-10 items-center self-end">
-        <div className="flex gap-3 ">
+      <div className="flex flex-col gap-2 sm:flex-col md:flex-row sm:items-center sm:self-end">
+        <div className="flex gap-3 sm:px-3">
           <div
             className="block"
             type="button"
@@ -62,8 +62,8 @@ const Book = ({
             <p className="text-xl font-bold text-slate-400">Completed</p>
           </div>
         </div>
-        <hr className="w-0.5 h-28 bg-slate-400" />
-        <div className="flex flex-col">
+        <hr className="none md:w-0.5 md:h-28 sm:bg-slate-400" />
+        <div className="flex flex-col sm:px-3">
           <p className="text-md font-bold text-slate-400">CURRENT CHAPTER</p>
           <p className="text-xl opacity-[0.7] pt-1 pb-1">
             Chapter
